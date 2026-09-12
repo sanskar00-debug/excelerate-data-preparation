@@ -2,6 +2,13 @@
 
 Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.
 
+![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=Python)
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Analytics](https://img.shields.io/badge/Data_Analytics-pink?style=for-the-badge)
+![Visuals](https://img.shields.io/badge/Data_Visualization-black?style=for-the-badge)
+
+
 ## 📌 Project Overview
 The raw dataset contains complex NoSQL string structures, varying chronological time units, and embedded structural markup flags that limit direct analysis. This repository provides an automated Python pipeline to standardize metrics, flatten JSON blocks, and clean descriptive data for dashboard configurations in Week 2.
 
