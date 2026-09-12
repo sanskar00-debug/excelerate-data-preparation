@@ -1,4 +1,4 @@
-# Experiential Learning Opportunity Dataset - Data Preparation Package
+# Excelerate Data Preparation - Team 11
 
 Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.
 
