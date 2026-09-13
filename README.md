@@ -25,6 +25,15 @@ The processing pipeline executes four core cleaning phases:
 3. **NoSQL Flattening Blocks:** Unpacks layered text attributes (`Badge`, `Cohort`, `Reward`) to cleanly present database indices directly inside explicit relational strings.
 4. **HTML Strip Processing:** Applies regular expression filters to remove structural layout markers from description parameters, outputting clean plain text blocks.
 
+### Advanced Cleansing Strategies Implemented:
+1. **Data Loss Profiling (Corruption Scrub):** Three rows containing raw string anomalies (`%22`, stray escaping parameters) were explicitly dropped. This action preserves type coercion for numerical algorithms without impacting sample size.
+2. **Geographic Standardization:** Clustered chaotic location representations into a tight dictionary controlled category (`Virtual`, `Work From Home`, `Kolkata`). Test entries (`qwerty`, text headers) were converted to standardized system `NaN` states.
+3. **Financial Feature Standardization:** Unified financial tracking variables by mapping all instances of `EURO` to `EUR`. Executed rigorous float parsing across `fee` and `microscholarship` attributes to prevent string value system errors in dashboard tools.
+4. **Identity Format Optimization:** Cleaned `current_editor` by stripping NoSQL object structures. Fields are now uniformly stored as flat email strings or comma-separated lists for collaborative records.
+5. **Deduplication Validation:** Fixed identification conflicts within the `code` array column by applying a newest-date tracking strategy, keeping the latest administrative updates and filtering out stale entries.
+6. **Unified Schema Architecture:** Eliminated structural inconsistency by flattening all remaining JSON tracking arrays (`Panellist`, `Testimonial`, `DropoutTransaction`, `NotStartedTransaction`, `tracking_questions`), extracting their unique identity strings (`_clean_id`) to ensure clean access across the final dataset.
+   
+
 ## 🚀 How to Run the Pipeline
 
 ### Prerequisites
