@@ -1,3 +1,7 @@
-## ignore the dataset file 
- data/raw
+# Ignore the entire raw data folder and its contents
+data/raw/
 
+# Do NOT ignore the processed folder or the cleaned dataset
+!data/processed/
+!data/processed/cleaned_opportunities.csv
+!data/processed/new_cleaned_opportunities.csv
