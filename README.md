@@ -7,6 +7,8 @@ Welcome to the **Data Understanding & Preparation Package** repository for Week 
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Analytics](https://img.shields.io/badge/Data_Analytics-pink?style=for-the-badge)
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+
 
 
 ## 📌 Project Overview
