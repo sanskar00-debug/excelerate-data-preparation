@@ -34,27 +34,28 @@ The processing pipeline executes four core cleaning phases:
 4. **Identity Format Optimization:** Cleaned `current_editor` by stripping NoSQL object structures. Fields are now uniformly stored as flat email strings or comma-separated lists for collaborative records.
 5. **Deduplication Validation:** Fixed identification conflicts within the `code` array column by applying a newest-date tracking strategy, keeping the latest administrative updates and filtering out stale entries.
 6. **Unified Schema Architecture:** Eliminated structural inconsistency by flattening all remaining JSON tracking arrays (`Panellist`, `Testimonial`, `DropoutTransaction`, `NotStartedTransaction`, `tracking_questions`), extracting their unique identity strings (`_clean_id`) to ensure clean access across the final dataset.
+7. 
  ## 📊 Week 2: Exploratory Data Analysis (EDA) & Visual Layer
 
 The engineered data was processed using Python visualization libraries to track operational patterns, timelines, and financial mix trends across **5,730 verified records**.
 
 ### 1. Temporal Trends: Opportunity Creation Trajectory
-![Monthly Opportunity Creation Trajectory](documentation/charts/opportunities_creation_trajectory.png)
+![Monthly Opportunity Creation Trajectory](documentation\charts\opportunities_creation_trajectory.png)
 * **Visual Insight:** The line chart reveals a cyclical, spike-driven posting history peaking aggressively in late Q3 (Sept 2023) and mid-Q2 (May 2024), reaching up to 1,000+ new cohorts simultaneously before hitting sharp baseline drops. 
 * **Strategic Interpretation:** Portfolio expansion is highly seasonal. This behavior shows distinct administrative batch processing windows, heavily synchronized around early-semester and mid-year academic lifecycle enrollment periods.
 
 ### 2. Operational Durations: Timeline Distributions
-![Program Duration Distribution](documentation/charts/program_duration_distribution.png)
+![Program Duration Distribution](documentation\charts\program_duration_distribution.png)
 * **Visual Insight:** The distribution histogram shows an intense structural spike heavily concentrated around the **210-day marker**, with a secondary minor cluster sitting under 50 standard days.
 * **Strategic Interpretation:** The portfolio relies almost entirely on fixed, long-form core timelines (~7 months) rather than micro-learning increments. This reveals an active platform focus on deep, multi-stage engagement tracks over brief episodic experiences.
 
 ### 3. Workflow Automation: Application Approval Protocols
-![Application Approval Protocol by Category](documentation/charts/application_approval_protocol.png)
+![Application Approval Protocol by Category](documentation\charts\application_approval_protocol.png)
 * **Visual Insight:** Across nearly all categories (such as *Internships, Courses, and Careers*), over **75% to 90% of applicant traffic requires manual review**, whereas *Competition* tracks present the highest automated validation throughput (~30% Auto-Approve).
 * **Strategic Interpretation:** The platform maintains strict administrative gatekeeping. Higher automation in competitions points to objective, system-scored assessment mechanics, while career and internship categories require manual screening to manage quality control.
 
 ### 4. Financial Demographics: Currency Denomination Mix
-![Currency Denomination Mix Across Top Categories](documentation/charts/currency_denomination_mix.png)
+![Currency Denomination Mix Across Top Categories](documentation\charts\currency_denomination_mix.png)
 * **Visual Insight:** The financial bar chart exposes a heavy dominance of **USD currency configurations** across every single portfolio category, with *Internships* providing the only visible footprint for alternative currencies like *INR* and *EUR*.
 * **Strategic Interpretation:** The business layer operates on a highly globalized monetization framework. While local target currency execution paths exist within internships, the ecosystem is built around a standardized international financial baseline.
 
