@@ -71,7 +71,7 @@ python scripts/data_cleaning.py
 ```
 ### 2. Regenerate Analytical Charts (Week 2)
 ```bash
-python scripts/generate_eda_charts.py
+python notebooks/generate_opportunities_visuals.py
 ``` 
 
 ## 🚀 How to Run the Pipeline
