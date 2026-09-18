@@ -27,44 +27,48 @@ def format_spines(ax):
 # ==============================================================================
 # Visual 1: Monthly Opportunity Creation Trajectory
 # ==============================================================================
-fig, ax = plt.subplots(figsize=(10, 6), facecolor=canvas_bg)
-format_spines(ax)
 
-df['created_dt'] = pd.to_datetime(df['created_at'], errors='coerce')
-monthly = (
-    df.set_index('created_dt').resample('ME')['opportunity_id'].count().dropna()
-)
-
+# Plot Trajectory Area
 ax.plot(
     monthly.index,
     monthly.values,
     color='#2563EB',
-    lw=3,
+    lw=2.5,
     marker='o',
-    markersize=6,
+    markersize=5,
 )
-ax.fill_between(monthly.index, monthly.values, color='#93C5FD', alpha=0.35)
+ax.fill_between(monthly.index, monthly.values, color='#93C5FD', alpha=0.3)
+
+# Title & Typography
 ax.set_title(
     'Monthly Opportunity Creation Trajectory',
-    fontsize=14,
+    fontsize=15,
     fontweight='bold',
-    color=text_dark,
+    color='#0F172A',
     pad=15,
 )
 ax.set_ylabel(
-    'New Postings / Cohorts', fontsize=11, fontweight='600', color=text_muted
+    'New Postings / Cohorts', fontsize=11, fontweight='bold', color='#475569'
 )
-ax.set_xlabel('Timeline', fontsize=11, fontweight='600', color=text_muted)
+ax.set_xlabel('Created Date', fontsize=11, fontweight='bold', color='#475569')
+ax.set_ylim(0, 1150)
+ax.grid(True, linestyle='--', alpha=0.5, color='#E2E8F0')
+ax.tick_params(colors='#475569', labelsize=10)
+
+# 4-Month Interval Date Formatting
+ax.xaxis.set_major_locator(mdates.MonthLocator(interval=4))
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+fig.autofmt_xdate(rotation=30)
 
 plt.tight_layout()
 plt.savefig(
     'visual_1_timeline_trajectory.png',
     dpi=300,
     bbox_inches='tight',
-    facecolor=canvas_bg,
+    facecolor='#F4F6F9',
 )
-plt.close()
-print('✓ Saved: visual_1_timeline_trajectory.png')
+print('✓ Saved cleanly: visual_1_timeline_trajectory.png')
+plt.show()
 
 # ==============================================================================
 # Visual 2: Program Duration Distribution
