@@ -9,10 +9,20 @@ Welcome to the **Data Understanding & Preparation Package** repository for Week 
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-
-
 ## 📌 Project Overview
 The raw dataset contains complex NoSQL string structures, varying chronological time units, and embedded structural markup flags that limit direct analysis. This repository provides an automated Python pipeline to standardize metrics, flatten JSON blocks, and clean descriptive data for dashboard configurations in Week 2.
+
+---
+## 👥 Team Members
+
+* **Olasope Omolola (Team Leader)** 
+* **Sanskar Muneshwar**
+* **Sadhna MM**
+* **Gordan Moenga**
+* **Muhammad Waqar Tahir**
+* **Keerti Betagiri**
+
+---
 
 ## 🛠️ Repository Schema & Architecture
 * `/data/raw/`: Houses the baseline uncleaned raw dataset catalog.
@@ -34,9 +44,8 @@ The processing pipeline executes four core cleaning phases:
 4. **Identity Format Optimization:** Cleaned `current_editor` by stripping NoSQL object structures. Fields are now uniformly stored as flat email strings or comma-separated lists for collaborative records.
 5. **Deduplication Validation:** Fixed identification conflicts within the `code` array column by applying a newest-date tracking strategy, keeping the latest administrative updates and filtering out stale entries.
 6. **Unified Schema Architecture:** Eliminated structural inconsistency by flattening all remaining JSON tracking arrays (`Panellist`, `Testimonial`, `DropoutTransaction`, `NotStartedTransaction`, `tracking_questions`), extracting their unique identity strings (`_clean_id`) to ensure clean access across the final dataset.
-7. 
- ## 📊 Week 2: Exploratory Data Analysis (EDA) & Visual Layer
 
+ ## 📊 Week 2: Exploratory Data Analysis (EDA) & Visual Layer
 The engineered data was processed using Python visualization libraries to track operational patterns, timelines, and financial mix trends across **5,730 verified records**.
 
 ### 1. Temporal Trends: Opportunity Creation Trajectory
