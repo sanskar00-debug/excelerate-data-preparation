@@ -91,7 +91,7 @@ pip install pandas numpy
 ### Execution Steps
 1. Clone this repository to your local terminal path:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/sanskar00-debug/excelerate-data-preparation.git
    ```
 2. Navigate into the script directories and execute the cleaning script:
    ```bash
