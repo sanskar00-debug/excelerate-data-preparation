@@ -9,10 +9,20 @@ Welcome to the **Data Understanding & Preparation Package** repository for Week 
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-
-
 ## 📌 Project Overview
 The raw dataset contains complex NoSQL string structures, varying chronological time units, and embedded structural markup flags that limit direct analysis. This repository provides an automated Python pipeline to standardize metrics, flatten JSON blocks, and clean descriptive data for dashboard configurations in Week 2.
+
+---
+## 👥 Team Members
+
+* **Olasope Omolola (Team Leader)** 
+* **Sanskar Muneshwar**
+* **Sadhna MM**
+* **Gordan Moenga**
+* **Muhammad Waqar Tahir**
+* **Keerti Betagiri**
+
+---
 
 ## 🛠️ Repository Schema & Architecture
 * `/data/raw/`: Houses the baseline uncleaned raw dataset catalog.
