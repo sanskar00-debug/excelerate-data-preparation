@@ -16,11 +16,12 @@ The raw dataset contains complex NoSQL string structures, varying chronological 
 ## 👥 Team Members
 
 * **Olasope Omolola (Team Leader)** 
-* **Sanskar Muneshwar**
-* **Sadhna MM**
+* **Sanskar Muneshwar (Dashboard Developer)**
+* **Sadhna MM (Documentation Reports Lead)**
 * **Gordan Moenga**
 * **Muhammad Waqar Tahir**
 * **Keerti Betagiri**
+* **Silah Tarbai (Insights & Analytics Lead)**
 
 ---
 
