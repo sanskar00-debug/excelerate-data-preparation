@@ -1,4 +1,6 @@
+
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import pandas as pd
 import seaborn as sns
 
@@ -27,6 +29,19 @@ def format_spines(ax):
 # ==============================================================================
 # Visual 1: Monthly Opportunity Creation Trajectory
 # ==============================================================================
+fig, ax = plt.subplots(figsize=(12, 6), facecolor=canvas_bg)
+format_spines(ax)
+
+df['created_date'] = pd.to_datetime(df['created_date'], errors='coerce')
+
+monthly = (
+    df.dropna(subset=['created_date'])
+      .groupby(df['created_date'].dt.to_period('M'))
+      .size()
+      .sort_index()
+)
+
+monthly.index = pd.to_datetime(monthly.index.astype(str) + '-01')
 
 # Plot Trajectory Area
 ax.plot(
@@ -51,7 +66,7 @@ ax.set_ylabel(
     'New Postings / Cohorts', fontsize=11, fontweight='bold', color='#475569'
 )
 ax.set_xlabel('Created Date', fontsize=11, fontweight='bold', color='#475569')
-ax.set_ylim(0, 1150)
+ax.set_ylim(0, max(monthly.values.max() * 1.15, 10))
 ax.grid(True, linestyle='--', alpha=0.5, color='#E2E8F0')
 ax.tick_params(colors='#475569', labelsize=10)
 
