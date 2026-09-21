@@ -22,7 +22,7 @@ The raw dataset contains complex NoSQL string structures, varying chronological 
 * **Muhammad Waqar Tahir**
 * **Keerti Betagiri(Data Insights & Interpretation Lead)**
 * **Silah Tarbai (Insights & Analytics Lead)**
-
+* **Nash Were**
 ---
 
 ## 🛠️ Repository Schema & Architecture
