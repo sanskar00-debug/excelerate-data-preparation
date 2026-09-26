@@ -1,0 +1,3 @@
+pip install pandas matplotlib seaborn numpy
+python Week_2_EDA/scripts/generate_5_visuals.py
+python Week_2_EDA/scripts/generate_charts_2_and_3.py
