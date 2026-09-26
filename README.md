@@ -1,6 +1,6 @@
 # Excelerate Data Preparation - Team 11
 
-Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
+This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
 
 
 ![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=Python)
