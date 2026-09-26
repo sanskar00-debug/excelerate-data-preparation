@@ -38,7 +38,7 @@ This project focuses on auditing, cleaning, and structuring raw programmatic dat
 
 Built with modern SaaS UI card architecture (`#F4F6F9` canvas, floating white cards, 1px `#E2E8F0` structural boundaries, and dark brand navigation sidebar).
 
-![Executive Dashboard Preview](week%203%20Dashboard/assets/dashboard%20preview.png)
+![Executive Dashboard Preview](week%203%20Dashboard\assets\dashboard%20preview.png)
 
 ### Key Dashboard Components:
 1. **Left Filter Navigation Dock:** Global multi-select dropdowns for `Category`, `Location Format`, `Currency Type`, and `Approval Protocol`.
