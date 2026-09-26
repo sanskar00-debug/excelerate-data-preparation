@@ -4,3 +4,8 @@ data/raw/
 # Do NOT ignore the processed folder or the cleaned dataset
 !data/processed/
 !data/processed/cleaned_opportunities.csv
+
+__pycache__/
+*.pyc
+.DS_Store
+*.hyper
