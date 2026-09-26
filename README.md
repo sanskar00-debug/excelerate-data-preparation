@@ -1,6 +1,7 @@
 # Excelerate Data Preparation - Team 11
 
-Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.
+Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
+
 
 ![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=Python)
 ![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
@@ -8,9 +9,9 @@ Welcome to the **Data Understanding & Preparation Package** repository for Week 
 ![Analytics](https://img.shields.io/badge/Data_Analytics-pink?style=for-the-badge)
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Status](https://img.shields.io/badge/Deliverable-Week%203%20Complete-emerald?style=for-the-badge)
 
-## 📌 Project Overview
-The raw dataset contains complex NoSQL string structures, varying chronological time units, and embedded structural markup flags that limit direct analysis. This repository provides an automated Python pipeline to standardize metrics, flatten JSON blocks, and clean descriptive data for dashboard configurations in Week 2.
+
 
 ---
 ## 👥 Team Members
@@ -24,48 +25,58 @@ The raw dataset contains complex NoSQL string structures, varying chronological 
 * **Silah Tarbai (Insights & Analytics Lead)**
 * **Nash Were**
 ---
+---
 
-## 🛠️ Repository Schema & Architecture
-* `/data/raw/`: Houses the baseline uncleaned raw dataset catalog.
-* `/data/processed/`: Contains the stable, analytically unified `cleaned_opportunities.csv`.
-* `/scripts/`: Holds the automated preprocessing execution code (`data_cleaning.py`).
-* `/documentation/`: Features the deep dive `Data_Quality_Report.md`.
+## 📌 Executive Summary & Key Metrics
 
-## ⚙️ Implemented Transformations
-The processing pipeline executes four core cleaning phases:
-1. **Missing State Alignment:** Converts mixed string indicators (`NULL`, `null`, `Null`, `{}`, `[]`) into machine-readable `NaN` properties.
-2. **paired Metric Standardization:** Maps inconsistent tracking variables (`minutes`, `weeks`, `years`) into a standardized continuous column: `duration_standard_days`.
-3. **NoSQL Flattening Blocks:** Unpacks layered text attributes (`Badge`, `Cohort`, `Reward`) to cleanly present database indices directly inside explicit relational strings.
-4. **HTML Strip Processing:** Applies regular expression filters to remove structural layout markers from description parameters, outputting clean plain text blocks.
+* **Total Active Listings:** 5,674 opportunities analyzed across 43 standardized attributes.
+* **Micro-Scholarship Coverage:** 86.2% of opportunities include financial support, with a standardized median award of **$120**.
+* **Delivery Infrastructure:** 74.6% of programs operate via remote infrastructure (**41.1% Work From Home**, **33.5% Virtual**).
+* **Tuition Access Model:** 78.9% (4,477 listings) are fully free access ($0 tuition fee).
+* **Operational Intake Bottleneck:** 85.9% of application pipelines require manual staff review, exhibiting high latency during cyclical batch spikes (July, October/November, February/March).
 
-### Advanced Cleansing Strategies Implemented:
-1. **Data Loss Profiling (Corruption Scrub):** Three rows containing raw string anomalies (`%22`, stray escaping parameters) were explicitly dropped. This action preserves type coercion for numerical algorithms without impacting sample size.
-2. **Geographic Standardization:** Clustered chaotic location representations into a tight dictionary controlled category (`Virtual`, `Work From Home`, `Kolkata`). Test entries (`qwerty`, text headers) were converted to standardized system `NaN` states.
-3. **Financial Feature Standardization:** Unified financial tracking variables by mapping all instances of `EURO` to `EUR`. Executed rigorous float parsing across `fee` and `microscholarship` attributes to prevent string value system errors in dashboard tools.
-4. **Identity Format Optimization:** Cleaned `current_editor` by stripping NoSQL object structures. Fields are now uniformly stored as flat email strings or comma-separated lists for collaborative records.
-5. **Deduplication Validation:** Fixed identification conflicts within the `code` array column by applying a newest-date tracking strategy, keeping the latest administrative updates and filtering out stale entries.
-6. **Unified Schema Architecture:** Eliminated structural inconsistency by flattening all remaining JSON tracking arrays (`Panellist`, `Testimonial`, `DropoutTransaction`, `NotStartedTransaction`, `tracking_questions`), extracting their unique identity strings (`_clean_id`) to ensure clean access across the final dataset.
+---
 
- ## 📊 Week 2: Exploratory Data Analysis (EDA) & Visual Layer
-The engineered data was processed using Python visualization libraries to track operational patterns, timelines, and financial mix trends across **5,730 verified records**.
+## 🖥️ Week 3 Interactive UI Dashboard
 
-### 1. Temporal Trends: Opportunity Creation Trajectory
-* **Visual Insight:** The line chart reveals a cyclical, spike-driven posting history peaking aggressively in late Q3 (Sept 2023) and mid-Q2 (May 2024), reaching up to 1,000+ new cohorts simultaneously before hitting sharp baseline drops. 
-* **Strategic Interpretation:** Portfolio expansion is highly seasonal. This behavior shows distinct administrative batch processing windows, heavily synchronized around early-semester and mid-year academic lifecycle enrollment periods.
+Built with modern SaaS UI card architecture (`#F4F6F9` canvas, floating white cards, 1px `#E2E8F0` structural boundaries, and dark brand navigation sidebar).
 
-### 2. Operational Durations: Timeline Distributions
-* **Visual Insight:** The distribution histogram shows an intense structural spike heavily concentrated around the **210-day marker**, with a secondary minor cluster sitting under 50 standard days.
-* **Strategic Interpretation:** The portfolio relies almost entirely on fixed, long-form core timelines (~7 months) rather than micro-learning increments. This reveals an active platform focus on deep, multi-stage engagement tracks over brief episodic experiences.
+![Executive Dashboard Preview](Week_3_Dashboard/assets/dashboard_preview.png)
 
-### 3. Workflow Automation: Application Approval Protocols
-* **Visual Insight:** Across nearly all categories (such as *Internships, Courses, and Careers*), over **75% to 90% of applicant traffic requires manual review**, whereas *Competition* tracks present the highest automated validation throughput (~30% Auto-Approve).
-* **Strategic Interpretation:** The platform maintains strict administrative gatekeeping. Higher automation in competitions points to objective, system-scored assessment mechanics, while career and internship categories require manual screening to manage quality control.
+### Key Dashboard Components:
+1. **Left Filter Navigation Dock:** Global multi-select dropdowns for `Category`, `Location Format`, `Currency Type`, and `Approval Protocol`.
+2. **Top KPI Status Banner:** Real-time totals, median scholarship allocation, remote penetration rate, and zero-fee access ratios.
+3. **Monthly Trajectory:** Dual-axis time series capturing cohort intake spikes across 3.8 longitudinal years.
+4. **Application Format Distribution:** Horizontal volume benchmarks for Remote delivery.
+5. **Workflow Automation Highlight Matrix:** Percent-of-total operational grid identifying high-automation tracks (e.g., Competitions at ~29%) vs. gatekept tracks (Careers at ~3.7%).
+6. **Program Density Bubble Grid:** Packed cluster volume scaling by track size.
+7. **Financial Structural Scatter Grid:** Non-aggregated parametric distribution benchmarking duration days vs. tuition fees.
+8. **Track Mix Profile:** Dual-axis center-KPI donut detailing categorical portfolio share.
 
-### 4. Financial Demographics: Currency Denomination Mix
-* **Visual Insight:** The financial bar chart exposes a heavy dominance of **USD currency configurations** across every single portfolio category, with *Internships* providing the only visible footprint for alternative currencies like *INR* and *EUR*.
-* **Strategic Interpretation:** The business layer operates on a highly globalized monetization framework. While local target currency execution paths exist within internships, the ecosystem is built around a standardized international financial baseline.
+---
 
-  ## 🚀 Execution & Reproducibility Pipeline
+## 📊 Week 2 Python Visual Explorations
+
+Standalone high-resolution (300 DPI) analysis scripts exploring supplemental dimensions not covered in BI dashboards:
+
+| Visual Output | Focus Area | Analytical Takeaway |
+| :--- | :--- | :--- |
+| **Duration Units Lollipop** | Program Scheduling | 75.4% of catalog durations are structured in weekly increments. |
+| **Monetization Donut** | Revenue Architecture | 78.9% free access baseline; paid programs (21.1%) cluster heavily in Events and Internships. |
+| **Scholarship Tiers Donut** | Financial Subsidy | 68.0% of all platform micro-scholarships sit in the standard $101–$250 tier. |
+| **Feature Adoption Funnel** | Engagement Completeness | Badges, Eligibility, and Cohort IDs exceed 87% adoption; Testimonials remain underutilized at 3.6%. |
+| **Metric Correlation Heatmap** | Inter-variable Dependency | Negative correlation between Duration and Rewards ($r = -0.48$) highlights micro-incentive deployment for shorter tracks. |
+
+---
+
+## 🛠️ Reproduction & Setup
+
+###  Clone Repository
+```bash
+git clone [https://github.com/sanskar00-debug/excelerate-data-preparation.git](https://github.com/sanskar00-debug/excelerate-data-preparation.git)
+cd excelerate-data-preparation
+
+## 🚀 Execution & Reproducibility Pipeline
 
 Ensure you have your environment updated with `pandas`, `numpy`, `matplotlib`, and `seaborn` installed:
 ```bash
@@ -88,17 +99,6 @@ Ensure you have Python 3.x installed alongside the `pandas` and `numpy` data eng
 ```bash
 pip install pandas numpy
 ```
-
-### Execution Steps
-1. Clone this repository to your local terminal path:
-   ```bash
-   git clone https://github.com/sanskar00-debug/excelerate-data-preparation.git
-   ```
-2. Navigate into the script directories and execute the cleaning script:
-   ```bash
-   python scripts/data_cleaning.py
-   ```
-3. Locate your normalized tabular production output stored directly inside the `/data/processed/` folder directories.
 
 ## 🗒️ Milestone Outcomes
 * ** Tabular Schema Clarity:** Clean separation between transactional metadata markers and natural content variables.
