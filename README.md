@@ -10,7 +10,7 @@ Welcome to the **Data Understanding & Preparation Package** repository for Week 
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
 ![Status](https://img.shields.io/badge/Deliverable-Week%203%20Complete-emerald?style=for-the-badge)
-![Status](https://img.shields.io/badge/Deliverable-Week%202%20Complete-crimpson_red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Deliverable-Week%202%20Complete-crimpsonred?style=for-the-badge)
 
 
 
