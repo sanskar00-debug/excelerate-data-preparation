@@ -2,16 +2,13 @@
 
 This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
 
-
+---
 ![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=Python)
 ![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
 ![Status](https://img.shields.io/badge/Deliverable-Week%203%20Complete-emerald?style=for-the-badge)
-
-
-
 
 ---
 ## 👥 Team Members
@@ -41,7 +38,7 @@ This project focuses on auditing, cleaning, and structuring raw programmatic dat
 
 Built with modern SaaS UI card architecture (`#F4F6F9` canvas, floating white cards, 1px `#E2E8F0` structural boundaries, and dark brand navigation sidebar).
 
-![Executive Dashboard Preview](Week_3_Dashboard/assets/dashboard_preview.png)
+![Executive Dashboard Preview](week%203%20Dashboard/assets/dashboard%20preview.png)
 
 ### Key Dashboard Components:
 1. **Left Filter Navigation Dock:** Global multi-select dropdowns for `Category`, `Location Format`, `Currency Type`, and `Approval Protocol`.
