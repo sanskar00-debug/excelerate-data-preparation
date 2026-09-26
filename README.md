@@ -37,7 +37,7 @@ This project focuses on auditing, cleaning, and structuring raw programmatic dat
 ## 🖥️ Week 3 Interactive UI Dashboard
 
 Built with modern SaaS UI card architecture (`#F4F6F9` canvas, floating white cards, 1px `#E2E8F0` structural boundaries, and dark brand navigation sidebar).
-```markdown
+
 ![Executive Dashboard Preview](week_3_Dashboard/assets/dashboard_preview.png)
 
 ### Key Dashboard Components:
