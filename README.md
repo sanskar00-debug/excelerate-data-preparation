@@ -1,15 +1,15 @@
 # Excelerate Data Preparation - Team 11
 
-Welcome to the **Data Understanding & Preparation Package** repository for Week 1. This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
+This project focuses on auditing, cleaning, and structuring raw programmatic data (Competitions, Virtual Internships, Corporate Simulations, and Masterclasses) extracted from a NoSQL database source.An executive-grade visual intelligence platform analyzing 5,674 platform offerings across 10 verticals. Developed during the Excelerate Data Visualization Trainee Internship, this repository consolidates Week 2 exploratory data analysis (EDA) and Week 3 interactive SaaS dashboard architecture.
 
 
 ![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=Python)
 ![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Analytics](https://img.shields.io/badge/Data_Analytics-pink?style=for-the-badge)
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
 ![Status](https://img.shields.io/badge/Deliverable-Week%203%20Complete-emerald?style=for-the-badge)
+
 
 
 
