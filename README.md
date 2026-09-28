@@ -8,7 +8,7 @@ This project focuses on auditing, cleaning, and structuring raw programmatic dat
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Visuals](https://img.shields.io/badge/Data_Visualization-skyblue?style=for-the-badge)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
-![Status](https://img.shields.io/badge/Deliverable-Week%203%20Complete-emerald?style=for-the-badge)
+[![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)]()
 
 ---
 ## 👥 Team Members
