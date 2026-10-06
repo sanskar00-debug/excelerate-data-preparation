@@ -94,3 +94,28 @@ excelerate-data-preparation/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
+```
+
+---
+
+## 🚀 Execution & Reproducibility Pipeline
+
+**1. Clone Repository & Setup Virtual Environment**
+
+git clone [https://github.com/sanskar00-debug/excelerate-data-preparation.git](https://github.com/sanskar00-debug/excelerate-data-preparation.git)
+cd excelerate-data-preparation  
+
+**2. Install Required Dependencies**
+
+pip install -r requirements.txt
+
+**3. Generate Analytical Visuals (Week 2)**
+Run the visualization scripts located in week_2_EDA/:
+
+python week_2_EDA/scripts/generate_5_visuals.py
+python week_2_EDA/scripts/generate_charts_2_and_3.py
+
+**4. Launch the Interactive Dashboard (Week 3)**
+Open week_3_Dashboard/Program Portfolio & Revenue Intelligence.twbx via Tableau Desktop or Tableau Public (v2024.1+).
+
