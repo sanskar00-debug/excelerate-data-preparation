@@ -4,7 +4,7 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Week%204%20In%20Progress-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Week%204%20Completed-blue?style=for-the-badge)
 
 An end-to-end data analytics and visual intelligence workspace analyzing 5,674 platform offerings across 10 verticals[cite: 16]. Developed during the Excelerate Data Visualization Trainee Internship, this repository tracks raw NoSQL data auditing (Week 1), deep exploratory data analysis and Python visual modeling (Week 2), interactive SaaS dashboard design in Tableau (Week 3), and final executive business reporting and deck synthesis (Week 4).
 
