@@ -125,11 +125,16 @@ Open week_3_Dashboard/Program Portfolio & Revenue Intelligence.twbx via Tableau 
 
 ## 🗒️ Milestone Outcomes & Insights
 
-**Week 1 — Tabular Schema Clarity & Audit:** Clean separation between transactional metadata markers and natural content variables; resolved missing values, standardized data types, and unified currency tags.  
-**Week 2 — Statistical Readiness & Visual EDA:** Unification of irregular duration intervals into a standardized day index; identified the $r = -0.48$ reward-duration correlation and proved that the catalog operates as a USD-denominated, remote-first ecosystem. 
+**Week 1 — Tabular Schema Clarity & Audit:** Clean separation between transactional metadata markers and natural content variables; resolved missing values, standardized data types, and unified currency tags. 
+
+**Week 2 — Statistical Readiness & Visual EDA:** Unification of irregular duration intervals into a standardized day index; identified the $r = -0.48$ reward-duration correlation and proved that the catalog operates as a USD-denominated, remote-first ecosystem.
+
 **Week 3 — SaaS Dashboard Implementation:** Successfully converted static exploratory insights into a production-grade 3×2 card dashboard with dynamic left-dock parameter filtering, dual-axis donut charts, and live cross-filtering capabilities.
+
 **Week 4 — Strategic Synthesis & Business Action:**
-**1.Intake Automation Expansion:*** The 85.9% manual review dependency creates administrative bottlenecks during July and March intake spikes. Deploying objective auto-approval criteria to standard Course and Masterclass listings can significantly reduce turnaround time.  
-**2.Template Standardization:** The heavy concentration around 210 days indicates hardcoded default template entries during posting setup. Mandatory duration validation at data entry will yield more realistic timeline forecasting.  
+**1.Intake Automation Expansion:*** The 85.9% manual review dependency creates administrative bottlenecks during July and March intake spikes. Deploying objective auto-approval criteria to standard Course and Masterclass listings can significantly reduce turnaround time.
+
+**2.Template Standardization:** The heavy concentration around 210 days indicates hardcoded default template entries during posting setup. Mandatory duration validation at data entry will yield more realistic timeline forecasting.
+
 **3.Currency Localization:** USD pricing dominates 82.4% of the catalog. The localized multi-currency model proven in Internships (INR and EUR account for ~23%) should be expanded across paid certificate courses to increase conversion in international student hubs[cite: 16, 17].   
 
